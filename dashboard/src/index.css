@@ -1,0 +1,35 @@
+/* index.css or styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default Light Mode Styles */
+html {
+  @apply bg-white text-black;
+}
+
+/* Dark Mode Styles */
+html.dark {
+  @apply bg-gray-900 text-white;
+}
+
+/* Add specific dark mode styles for components */
+.dark .bg-gray-100 {
+  @apply bg-gray-800;
+}
+
+.dark .bg-white {
+  @apply bg-gray-700;
+}
+
+.dark .border-gray-300 {
+  @apply border-gray-600;
+}
+
+.dark .text-gray-700 {
+  @apply text-gray-300;
+}
+
+.dark .text-gray-600 {
+  @apply text-gray-400;
+}
